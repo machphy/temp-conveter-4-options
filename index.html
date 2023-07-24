@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Dev" content="Alan Benavides">
+        
+        <link rel="stylesheet" href="style.css">
+        
+
+        <title>Temperature converter</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+               
+                <h1>Temperature converter</h1>
+                <br>
+            </header>
+
+            <div class="row2">
+                <p>
+                    <h2>Temperature</h2>
+                    <span class="txt">
+                        From: <input type="number" placeholder="0" step="any" id="number" onclick="convert()" onchange="convert()" value="0">
+                        <select name="selectTemp1" id="selectTemp1" onchange="convert()">
+                            <option value="ºC">ºC</option>
+                            <option value="ºF">ºF</option>
+                            <option value="K">K</option>
+                            <option value="R">R</option>
+                        </select>
+                        to
+                        <select name="selectTemp2" id="selectTemp2" onchange="convert()">
+                            <option value="ºC">ºC</option>
+                            <option value="ºF">ºF</option>
+                            <option value="K">K</option>
+                            <option value="R">R</option>
+                        </select>
+                    </span>
+                    <br>
+                </p>
+            </div>
+
+            <div class="row3">
+                <div id="c1r1" >0 ºC</div>
+                <div id="c2r1">=</div>
+                <div id="c3r1">0 ºC</div>
+            </div>
+
+            <div id="alrt" ></div>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
